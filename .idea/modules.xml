@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher.iml" filepath="$PROJECT_DIR$/chai-hens-voucher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-api/chai-hens-voucher-api.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-api/chai-hens-voucher-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-app/chai-hens-voucher-app.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-app/chai-hens-voucher-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-data/chai-hens-voucher-data.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-data/chai-hens-voucher-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-parent/chai-hens-voucher-parent.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-parent/chai-hens-voucher-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-service/chai-hens-voucher-service.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-service/chai-hens-voucher-service.iml" />
+    </modules>
+  </component>
+</project>
