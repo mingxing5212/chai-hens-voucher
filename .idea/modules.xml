@@ -6,6 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-api/chai-hens-voucher-api.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-api/chai-hens-voucher-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-app/chai-hens-voucher-app.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-app/chai-hens-voucher-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-data/chai-hens-voucher-data.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-data/chai-hens-voucher-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-market.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-market.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-market-api/chai-hens-voucher-market-api.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-market-api/chai-hens-voucher-market-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-market-app/chai-hens-voucher-market-app.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-market-app/chai-hens-voucher-market-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-market-data/chai-hens-voucher-market-data.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-market-data/chai-hens-voucher-market-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-market-parent/chai-hens-voucher-market-parent.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-market-parent/chai-hens-voucher-market-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-market-service/chai-hens-voucher-market-service.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-market-service/chai-hens-voucher-market-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-parent/chai-hens-voucher-parent.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-parent/chai-hens-voucher-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/chai-hens-voucher-service/chai-hens-voucher-service.iml" filepath="$PROJECT_DIR$/chai-hens-voucher-service/chai-hens-voucher-service.iml" />
     </modules>

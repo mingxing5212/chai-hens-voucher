@@ -4,16 +4,16 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>me.mingxing5212</groupId>
-	<artifactId>chai-hens-vouvher</artifactId>
+	<artifactId>chai-hens-voucher-market</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>chai-hens-voucher-parent</module>
-		<module>chai-hens-voucher-api</module>
-		<module>chai-hens-voucher-app</module>
-		<module>chai-hens-voucher-data</module>
-		<module>chai-hens-voucher-service</module>
+		<module>chai-hens-voucher-market-parent</module>
+		<module>chai-hens-voucher-market-api</module>
+		<module>chai-hens-voucher-market-app</module>
+		<module>chai-hens-voucher-market-data</module>
+		<module>chai-hens-voucher-market-service</module>
 	</modules>
     <build>
         <plugins>

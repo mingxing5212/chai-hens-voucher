@@ -30,6 +30,10 @@
         <module name="chai-hens-voucher-api" />
         <module name="chai-hens-voucher-app" />
         <module name="chai-hens-voucher-data" />
+        <module name="chai-hens-voucher-market-api" />
+        <module name="chai-hens-voucher-market-app" />
+        <module name="chai-hens-voucher-market-data" />
+        <module name="chai-hens-voucher-market-service" />
         <module name="chai-hens-voucher-service" />
       </profile>
     </annotationProcessing>
@@ -38,6 +42,12 @@
       <module name="chai-hens-voucher-api" target="1.5" />
       <module name="chai-hens-voucher-app" target="1.5" />
       <module name="chai-hens-voucher-data" target="1.5" />
+      <module name="chai-hens-voucher-market" target="1.5" />
+      <module name="chai-hens-voucher-market-api" target="1.5" />
+      <module name="chai-hens-voucher-market-app" target="1.5" />
+      <module name="chai-hens-voucher-market-data" target="1.5" />
+      <module name="chai-hens-voucher-market-parent" target="1.5" />
+      <module name="chai-hens-voucher-market-service" target="1.5" />
       <module name="chai-hens-voucher-parent" target="1.5" />
       <module name="chai-hens-voucher-service" target="1.5" />
     </bytecodeTargetLevel>
