@@ -16,3 +16,8 @@ chaihens:
       password: 123456
 logging:
   config: ./config/logback.xml
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp

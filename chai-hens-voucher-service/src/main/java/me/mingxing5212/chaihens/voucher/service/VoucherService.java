@@ -16,7 +16,7 @@ public class VoucherService {
     @Autowired
     private VoucherMapper voucherMapper;
 
-    public Voucher getvoucher(Long voucherId){
+    public Voucher getVoucher(Long voucherId){
         return voucherMapper.findById(voucherId);
     }
 }

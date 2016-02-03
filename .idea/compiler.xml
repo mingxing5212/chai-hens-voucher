@@ -26,6 +26,7 @@
         <module name="chai-hens-merchant-app" />
         <module name="chai-hens-merchant-data" />
         <module name="chai-hens-merchant-service" />
+        <module name="chai-hens-voucher-admin" />
         <module name="chai-hens-voucher-api" />
         <module name="chai-hens-voucher-app" />
         <module name="chai-hens-voucher-data" />
@@ -33,12 +34,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="chai-hens-merchant" target="1.5" />
-      <module name="chai-hens-merchant-api" target="1.5" />
-      <module name="chai-hens-merchant-app" target="1.5" />
-      <module name="chai-hens-merchant-data" target="1.5" />
-      <module name="chai-hens-merchant-parent" target="1.5" />
-      <module name="chai-hens-merchant-service" target="1.5" />
       <module name="chai-hens-voucher" target="1.5" />
       <module name="chai-hens-voucher-api" target="1.5" />
       <module name="chai-hens-voucher-app" target="1.5" />
