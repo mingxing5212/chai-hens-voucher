@@ -2,7 +2,7 @@ chaihens:
   voucher:
     web:
       #HTTP 监听端口
-      port: 8082
+      port: 8080
       #嵌入式Web服务器的线程池配置
       threadPool:
         maxThreads: 200
@@ -14,9 +14,6 @@ chaihens:
       jdbcUrl: jdbc:mysql://192.168.99.100:32768/chaihens?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8
       username: root
       password: 123456
-    mongodb:
-      serverAddress: 192.168.99.100:32769
-      dbName: voucher_market
 logging:
   config: ./config/logback.xml
 spring:
