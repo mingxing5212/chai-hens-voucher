@@ -14,6 +14,7 @@ public class VoucherEntity {
     private String name;
     private Integer type;
     private Integer status;
+    private Long merchantId;
     private BigDecimal denomination;
     private String description;
     private String avatar;
@@ -99,5 +100,13 @@ public class VoucherEntity {
 
     public void setEffectiveEndTime(Timestamp effectiveEndTime) {
         this.effectiveEndTime = effectiveEndTime;
+    }
+
+    public Long getMerchantId() {
+        return merchantId;
+    }
+
+    public void setMerchantId(Long merchantId) {
+        this.merchantId = merchantId;
     }
 }

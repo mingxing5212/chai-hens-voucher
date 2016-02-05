@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7fc4e9f-590e-40e6-858e-4e9be3601c6c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.yml" afterPath="$PROJECT_DIR$/config/application.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-market-app/chai-hens-voucher-market-app.iml" afterPath="$PROJECT_DIR$/chai-hens-voucher-market-app/chai-hens-voucher-market-app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-market-data/chai-hens-voucher-market-data.iml" afterPath="$PROJECT_DIR$/chai-hens-voucher-market-data/chai-hens-voucher-market-data.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-market-service/chai-hens-voucher-market-service.iml" afterPath="$PROJECT_DIR$/chai-hens-voucher-market-service/chai-hens-voucher-market-service.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-market-app/pom.xml" afterPath="$PROJECT_DIR$/chai-hens-voucher-market-app/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-market-data/pom.xml" afterPath="$PROJECT_DIR$/chai-hens-voucher-market-data/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-market-parent/pom.xml" afterPath="$PROJECT_DIR$/chai-hens-voucher-market-parent/pom.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/voucher/api/IVoucherAPI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/VoucherAPIImpl.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/voucher/api/IVoucherDefinitionService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/web/VoucherApi.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/web/VoucherSecurityApi.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/impl/VoucherDefinitionServiceImpl.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/entity/VoucherEntity.java" afterPath="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/entity/VoucherEntity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/VoucherMapper.java" afterPath="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/VoucherMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chai-hens-voucher-app/src/main/resources/dubbo-provider.xml" afterPath="$PROJECT_DIR$/chai-hens-voucher-app/src/main/resources/dubbo-provider.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="chai-hens-merchant.iws" />
@@ -48,92 +51,100 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MongoConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/configure/MongoConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1021#1036#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WechatVoucher.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-data/src/main/java/me/mingxing5212/chaihens/voucher/market/data/WechatVoucher.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#639#640#0" expanded="true" />
-                <element signature="e#670#671#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-                <element signature="e#777#778#0" expanded="true" />
-                <element signature="e#811#812#0" expanded="true" />
-                <element signature="e#843#844#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#972#973#0" expanded="true" />
-                <element signature="e#1004#1005#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-                <element signature="e#1099#1100#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-data/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.222221">
-              <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="48" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.58441556">
-              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/pom.xml">
+      <file leaf-file-name="IVoucherAPI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/voucher/api/IVoucherAPI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dubbo-provider.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-app/src/main/resources/dubbo-provider.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-10.851851">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MongoProperties.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/configure/MongoProperties.java">
+      <file leaf-file-name="VoucherAPIImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/VoucherAPIImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoucherConverter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/converter/VoucherConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoucherMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/VoucherMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoucherEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/entity/VoucherEntity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VoucherDefinitionService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/VoucherDefinitionService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6707317">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -165,22 +176,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/merchant/Application.java" />
-        <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/merchant/configure/ChaihensMerchantDatabaseProperties.java" />
-        <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/merchant/configure/WebConfigurationProperties.java" />
-        <option value="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/merchant/api/MerchantApi.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/merchant/api/VoucherApi.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/merchant/api/VoucherSecurityApi.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/merchant/dto/VoucherDto.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/configure/ChaihensVoucherDatabaseProperties.java" />
-        <option value="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/VoucherMapper.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/voucher/api/VoucherApi.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/configure/DatabaseConfiguration.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/configure/WebConfiguration.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/domain/VoucherType.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/definition/VoucherDefinitionService.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/domain/Voucher.java" />
-        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/VoucherService.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-admin/src/main/java/me/mingxing5212/chaihens/voucher/admin/web/HomeController.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-admin/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -193,11 +198,9 @@
         <option value="$PROJECT_DIR$/chai-hens-voucher-service/pom.xml" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/impl/VoucherDefinitionService.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/impl/VoucherServiceImpl.java" />
-        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/impl/VoucherDefinitionServiceImpl.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/Application.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-app/pom.xml" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-parent/pom.xml" />
-        <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/resources/dubbo-provider.xml" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-market-api/src/main/java/me/mingxing5212/chaihens/voucher/market/api/IVoucherPutOnService.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-market-service/src/main/java/me/mingxing5212/chaihens/voucher/market/service/impl/VoucherPutOnServiceImpl.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/web/VoucherApi.java" />
@@ -211,6 +214,19 @@
         <option value="$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/configure/MongoConfiguration.java" />
         <option value="$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/configure/MongoProperties.java" />
         <option value="$PROJECT_DIR$/config/application.yml" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/voucher/api/IVoucherDefinitionService.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/impl/VoucherDefinitionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/VoucherService.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/VoucherDefinitionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/voucher/api/IVoucherAPI.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/VoucherConverter.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/VoucherAPIImpl.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/converter/VoucherConverter.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/entity/VoucherEntity.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/resources/dubbo-provider.xml" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/web/TestController.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/VoucherMapper.java" />
+        <option value="$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/VoucherDefinitionService.java" />
       </list>
     </option>
   </component>
@@ -232,16 +248,6 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="chai-hens-vouvher" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -294,7 +300,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -309,7 +314,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chai-hens-voucher-market" />
+              <option name="myItemId" value="chai-hens-voucher" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -319,7 +324,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="chai-hens-voucher-market" />
+              <option name="myItemId" value="chai-hens-voucher" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -327,9 +332,216 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-parent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-merchant" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="chai-hens-voucher-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -359,6 +571,7 @@
       <recent name="$PROJECT_DIR$/chai-hens-voucher-admin/src/main/webapp/WEB-INF/jsp" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="me.mingxing5212.chaihens.voucher.service" />
       <recent name="me.mingxing5212.chaihens.voucher.api" />
       <recent name="me.mingxing5212.chaihens.voucher" />
     </key>
@@ -366,7 +579,7 @@
       <recent name="me.mingxing5212.chaihens.voucher.web" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application (1)">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration default="false" name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="me.mingxing5212.chaihens.voucher.Application" />
@@ -374,10 +587,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="VoucherApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="me.mingxing5212.chaihens.voucher.market.Application" />
-      <module name="chai-hens-voucher-market-app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="me.mingxing5212.chaihens.voucher.Application" />
+      <module name="" />
       <envs />
       <method />
     </configuration>
@@ -632,12 +845,12 @@
     </configuration>
     <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.VoucherApplication" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
+        <item index="1" class="java.lang.String" itemvalue="Spring Boot.VoucherApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -656,11 +869,12 @@
       <workItem from="1454422388259" duration="8497000" />
       <workItem from="1454468874330" duration="3071000" />
       <workItem from="1454486598828" duration="3957000" />
+      <workItem from="1454660147383" duration="7261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27755000" />
+    <option name="totallyTimeSpent" value="35016000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -675,7 +889,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28082192" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24959612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -684,7 +898,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -701,7 +915,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/VoucherDefinitionService.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -710,6 +932,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -834,27 +1064,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-api/src/main/java/me/mingxing5212/chaihens/voucher/market/api/IVoucherPutOnService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.0.1-SNAPSHOT/mybatis-spring-boot-autoconfigure-1.0.1-SNAPSHOT.jar!/org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-api/src/main/java/me/mingxing5212/chaihens/voucher/market/dto/VoucherDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-service/src/main/java/me/mingxing5212/chaihens/voucher/market/service/impl/VoucherPutOnServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
-          <folding />
+        <state vertical-scroll-proportion="0.35402298">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -866,15 +1079,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/resources/dubbo-provider.xml">
+    <entry file="jar://$MAVEN_REPOSITORY$/me/mingxing5212/chai-hens-domain/1.0-SNAPSHOT/chai-hens-domain-1.0-SNAPSHOT.jar!/me/mingxing5212/chaihens/domain/MerchantUser.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.222222">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.13793103">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-service/src/main/java/me/mingxing5212/chaihens/voucher/market/service/VoucherService.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/me/mingxing5212/chai-hens-domain/1.0-SNAPSHOT/chai-hens-domain-1.0-SNAPSHOT.jar!/me/mingxing5212/chaihens/domain/Platform.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2222223">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-parent/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38961038">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/me/mingxing5212/chai-hens-domain/1.0-SNAPSHOT/chai-hens-domain-1.0-SNAPSHOT.jar!/me/mingxing5212/chaihens/domain/Voucher.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5425532">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-api/src/main/java/me/mingxing5212/chaihens/voucher/api/IVoucherAPI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-app/src/main/resources/dubbo-provider.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.851851">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/converter/VoucherConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
@@ -884,116 +1155,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/spring/boot/mybatis-spring-boot-autoconfigure/1.0.1-SNAPSHOT/mybatis-spring-boot-autoconfigure-1.0.1-SNAPSHOT.jar!/org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35402298">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/Application.java">
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/api/impl/VoucherAPIImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-data/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.222221">
-          <caret line="40" column="8" selection-start-line="40" selection-start-column="8" selection-end-line="48" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-data/src/main/java/me/mingxing5212/chaihens/voucher/market/data/WechatVoucher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="33" column="59" selection-start-line="33" selection-start-column="59" selection-end-line="33" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#548#549#0" expanded="true" />
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#639#640#0" expanded="true" />
-            <element signature="e#670#671#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
-            <element signature="e#777#778#0" expanded="true" />
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#843#844#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#933#934#0" expanded="true" />
-            <element signature="e#972#973#0" expanded="true" />
-            <element signature="e#1004#1005#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-            <element signature="e#1099#1100#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/configure/MongoConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/VoucherMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-app/src/main/java/me/mingxing5212/chaihens/voucher/web/TestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5243902">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1021#1036#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/web/VoucherMarketApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.97402596">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#882#883#0" expanded="true" />
-            <element signature="e#909#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64285713">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/pom.xml">
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-data/src/main/java/me/mingxing5212/chaihens/voucher/data/entity/VoucherEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="21" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/configure/MybatisConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-service/src/main/java/me/mingxing5212/chaihens/voucher/service/VoucherDefinitionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35714287">
-          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chai-hens-voucher-market-app/src/main/java/me/mingxing5212/chaihens/voucher/market/configure/MongoProperties.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.58441556">
-          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
-          <folding />
+        <state vertical-scroll-proportion="0.6707317">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
