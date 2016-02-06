@@ -19,8 +19,10 @@ public class VoucherEntity {
     private String description;
     private String avatar;
     private String color;
+    private String storeJson;
     private Timestamp effectiveStartTime;
     private Timestamp effectiveEndTime;
+    private Long operator;
 
     public Long getId() {
         return id;
@@ -108,5 +110,21 @@ public class VoucherEntity {
 
     public void setMerchantId(Long merchantId) {
         this.merchantId = merchantId;
+    }
+
+    public String getStoreJson() {
+        return storeJson;
+    }
+
+    public void setStoreJson(String storeJson) {
+        this.storeJson = storeJson;
+    }
+
+    public Long getOperator() {
+        return operator;
+    }
+
+    public void setOperator(Long operator) {
+        this.operator = operator;
     }
 }

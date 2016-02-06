@@ -34,6 +34,7 @@
         <zookeeper-version>3.4.6</zookeeper-version>
         <zkclient-version>0.1</zkclient-version>
         <chai-hens-common-version>1.0-SNAPSHOT</chai-hens-common-version>
+        <jackson-version>2.7.1</jackson-version>
     </properties>
 
     <dependencyManagement>
@@ -214,6 +215,11 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-classic</artifactId>
                 <version>${logback-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>${jackson-version}</version>
             </dependency>
             <dependency>
                 <groupId>com.alibaba</groupId>

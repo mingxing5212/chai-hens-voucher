@@ -21,4 +21,6 @@ public interface VoucherMapper {
             "VALUES (#{name}, #{type}, #{status}, #{merchantId}, #{denomination}, #{description}, #{avatar}, #{color}, #{effectiveStartTime}, #{effectiveEndTime})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     Long addVoucher(VoucherEntity voucherEntity);
+
+
 }

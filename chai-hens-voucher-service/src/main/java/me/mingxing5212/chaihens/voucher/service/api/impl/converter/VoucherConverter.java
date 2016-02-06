@@ -1,5 +1,8 @@
 package me.mingxing5212.chaihens.voucher.service.api.impl.converter;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import me.mingxing5212.chaihens.domain.Store;
 import me.mingxing5212.chaihens.domain.Voucher;
 import me.mingxing5212.chaihens.voucher.data.entity.VoucherEntity;
 
@@ -31,5 +34,19 @@ public class VoucherConverter {
         voucherEntity.setEffectiveStartTime(new Timestamp(voucher.getEffectiveStartTime()));
         voucherEntity.setEffectiveEndTime(new Timestamp(voucher.getEffectiveEndTime()));
         return voucherEntity;
+    }
+
+    /**
+     * 店铺转换器
+     * @param store
+     * @return
+     */
+    public static String convertStoreString(Store store){
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            return objectMapper.writeValueAsString(store);
+        } catch (JsonProcessingException e) {
+            return "未知店铺";
+        }
     }
 }

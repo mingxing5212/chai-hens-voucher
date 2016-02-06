@@ -1,0 +1,21 @@
+CREATE TABLE `tb_voucher` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(45) NOT NULL,
+  `type` tinyint(4) NOT NULL,
+  `status` tinyint(4) NOT NULL DEFAULT '0',
+  `merchant_id` int(11) NOT NULL,
+  `denomination` decimal(10,2) NOT NULL,
+  `description` varchar(1000) NOT NULL,
+  `store_json` varchar(255) DEFAULT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
+  `color` varchar(45) DEFAULT NULL,
+  `effective_start_time` timestamp NOT NULL,
+  `effective_end_time` timestamp NOT NULL,
+  `operator` int(11) unsigned NOT NULL,
+  `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  KEY `merchant_index` (`merchant_id`),
+  KEY `status_index` (`status`),
+  KEY `type_index` (`type`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
