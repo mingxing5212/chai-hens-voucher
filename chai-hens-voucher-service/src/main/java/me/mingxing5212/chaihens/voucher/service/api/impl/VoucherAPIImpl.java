@@ -7,6 +7,7 @@ import me.mingxing5212.chaihens.exception.ServiceException;
 import me.mingxing5212.chaihens.voucher.api.IVoucherAPI;
 import me.mingxing5212.chaihens.voucher.data.entity.VoucherEntity;
 import me.mingxing5212.chaihens.voucher.service.VoucherDefinitionService;
+import me.mingxing5212.chaihens.voucher.service.VoucherMarketService;
 import me.mingxing5212.chaihens.voucher.service.api.impl.converter.VoucherConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -23,6 +24,9 @@ public class VoucherAPIImpl implements IVoucherAPI {
     @Autowired
     private VoucherDefinitionService voucherDefinitionService;
 
+    @Autowired
+    private VoucherMarketService voucherMarketService;
+
     /**
      * 创建卡券
      * @param voucher 卡券信息
@@ -37,12 +41,27 @@ public class VoucherAPIImpl implements IVoucherAPI {
         return voucherDefinitionService.addVoucher(voucherEntity);
     }
 
+    /**
+     * 修改卡券
+     * @param voucher 修正的卡券信息
+     * @param operator 操作员
+     * @throws ServiceException
+     */
     public void modifyVoucher(Voucher voucher, MerchantUser operator) throws ServiceException {
-
+        VoucherEntity voucherEntity = VoucherConverter.convertVoucherEntity(voucher);
+        voucherEntity.setStoreJson(VoucherConverter.convertStoreString(voucher.getStore()));
+        voucherEntity.setOperator(operator.getId());
+        voucherDefinitionService.modifyVoucher(voucherEntity);
     }
 
+    /**
+     * 删除卡券
+     * @param voucherId 卡券ID
+     * @param operator 操作员
+     * @throws ServiceException
+     */
     public void removeVoucher(Long voucherId, MerchantUser operator) throws ServiceException {
-
+        voucherDefinitionService.removeVoucher(voucherId);
     }
 
     public void putOnMarket(Long voucherId, Set<Platform> platforms, MerchantUser operator) throws ServiceException {

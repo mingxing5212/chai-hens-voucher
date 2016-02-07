@@ -27,7 +27,7 @@ public class TestController {
     public String test(){
         VoucherEntity voucherEntity = new VoucherEntity();
         voucherEntity.setName("TEST");
-        voucherEntity.setColor("#FF00FF");
+        /*voucherEntity.setColor("#FF00FF");
         voucherEntity.setStatus(1);
         voucherEntity.setType(1);
         voucherEntity.setMerchantId(1l);
@@ -35,8 +35,8 @@ public class TestController {
         voucherEntity.setDescription("BALABALA");
         voucherEntity.setAvatar("NONE");
         voucherEntity.setEffectiveStartTime(new Timestamp(System.currentTimeMillis()));
-        voucherEntity.setEffectiveEndTime(new Timestamp(System.currentTimeMillis()));
-        voucherDefinitionService.addVoucher(voucherEntity);
+        voucherEntity.setEffectiveEndTime(new Timestamp(System.currentTimeMillis()));*/
+        voucherDefinitionService.modifyVoucher(voucherEntity);
         return "";
     }
 }

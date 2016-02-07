@@ -17,7 +17,28 @@ public class VoucherDefinitionService {
     @Autowired
     protected VoucherMapper voucherMapper;
 
+    /**
+     * 增加优惠券
+     * @param voucherEntity
+     * @return
+     */
     public Long addVoucher(VoucherEntity voucherEntity){
         return voucherMapper.addVoucher(voucherEntity);
+    }
+
+    /**
+     * 修改优惠券
+     * @param voucherEntity
+     */
+    public void modifyVoucher(VoucherEntity voucherEntity){
+        voucherMapper.modifyVoucher(voucherEntity);
+    }
+
+    /**
+     * 删除优惠券
+     * @param voucherId
+     */
+    public void removeVoucher(Long voucherId){
+        voucherMapper.removeVoucher(voucherId);
     }
 }

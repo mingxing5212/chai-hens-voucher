@@ -1,10 +1,7 @@
 package me.mingxing5212.chaihens.voucher.data;
 
 import me.mingxing5212.chaihens.voucher.data.entity.VoucherEntity;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Options;
-import org.apache.ibatis.annotations.Param;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 /**
  * Voucher数据处理
@@ -22,5 +19,10 @@ public interface VoucherMapper {
     @Options(useGeneratedKeys = true, keyProperty = "id")
     Long addVoucher(VoucherEntity voucherEntity);
 
+    @UpdateProvider(type = VoucherDynaUpdateSqlProvider.class,
+            method="updateVoucher")
+    void modifyVoucher(VoucherEntity voucherEntity);
 
+    @Delete("DELETE FROM tb_voucher WHERE `id`=#{voucherId}")
+    void removeVoucher(Long voucherId);
 }

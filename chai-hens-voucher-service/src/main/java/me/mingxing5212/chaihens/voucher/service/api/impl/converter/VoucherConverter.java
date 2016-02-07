@@ -25,14 +25,18 @@ public class VoucherConverter {
         VoucherEntity voucherEntity = new VoucherEntity();
         voucherEntity.setId(voucher.getId());
         voucherEntity.setName(voucher.getName());
-        voucherEntity.setType(voucher.getType().getCode());
-        voucherEntity.setStatus(voucher.getStatus().getCode());
+        if(voucher.getType() != null)
+            voucherEntity.setType(voucher.getType().getCode());
+        if(voucher.getStatus() != null)
+            voucherEntity.setStatus(voucher.getStatus().getCode());
         voucherEntity.setDescription(voucher.getDescription());
         voucherEntity.setColor(voucher.getColor());
         voucherEntity.setAvatar(voucher.getAvatar());
         voucherEntity.setDenomination(voucher.getDenomination());
-        voucherEntity.setEffectiveStartTime(new Timestamp(voucher.getEffectiveStartTime()));
-        voucherEntity.setEffectiveEndTime(new Timestamp(voucher.getEffectiveEndTime()));
+        if(voucher.getEffectiveStartTime() != null)
+            voucherEntity.setEffectiveStartTime(new Timestamp(voucher.getEffectiveStartTime()));
+        if(voucher.getEffectiveEndTime() != null)
+            voucherEntity.setEffectiveEndTime(new Timestamp(voucher.getEffectiveEndTime()));
         return voucherEntity;
     }
 
@@ -46,7 +50,7 @@ public class VoucherConverter {
         try {
             return objectMapper.writeValueAsString(store);
         } catch (JsonProcessingException e) {
-            return "未知店铺";
+            return null;
         }
     }
 }
