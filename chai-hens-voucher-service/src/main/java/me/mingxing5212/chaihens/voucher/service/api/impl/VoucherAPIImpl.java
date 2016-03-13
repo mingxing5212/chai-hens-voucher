@@ -1,5 +1,7 @@
 package me.mingxing5212.chaihens.voucher.service.api.impl;
 
+import me.mingxing5212.chaihens.component.VoucherResultComponent;
+import me.mingxing5212.chaihens.component.VoucherSearchComponent;
 import me.mingxing5212.chaihens.domain.MerchantUser;
 import me.mingxing5212.chaihens.domain.Platform;
 import me.mingxing5212.chaihens.domain.Voucher;
@@ -11,6 +13,7 @@ import me.mingxing5212.chaihens.voucher.service.VoucherMarketService;
 import me.mingxing5212.chaihens.voucher.service.api.impl.converter.VoucherConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -35,8 +38,8 @@ public class VoucherAPIImpl implements IVoucherAPI {
      * @throws ServiceException
      */
     public Long addVoucher(Voucher voucher, MerchantUser operator) throws ServiceException {
-        VoucherEntity voucherEntity = VoucherConverter.convertVoucherEntity(voucher);
-        voucherEntity.setStoreJson(VoucherConverter.convertStoreString(voucher.getStore()));
+        VoucherEntity voucherEntity = VoucherConverter.convertToVoucherEntity(voucher);
+        //voucherEntity.setStoreJson(VoucherConverter.convertStoreString(voucher.getStore()));
         voucherEntity.setOperator(operator.getId());
         return voucherDefinitionService.addVoucher(voucherEntity);
     }
@@ -48,8 +51,8 @@ public class VoucherAPIImpl implements IVoucherAPI {
      * @throws ServiceException
      */
     public void modifyVoucher(Voucher voucher, MerchantUser operator) throws ServiceException {
-        VoucherEntity voucherEntity = VoucherConverter.convertVoucherEntity(voucher);
-        voucherEntity.setStoreJson(VoucherConverter.convertStoreString(voucher.getStore()));
+        VoucherEntity voucherEntity = VoucherConverter.convertToVoucherEntity(voucher);
+        //voucherEntity.setStoreJson(VoucherConverter.convertStoreString(voucher.getStore()));
         voucherEntity.setOperator(operator.getId());
         voucherDefinitionService.modifyVoucher(voucherEntity);
     }
@@ -70,5 +73,19 @@ public class VoucherAPIImpl implements IVoucherAPI {
 
     public void withdrawMarket(Long voucherId, Set<Platform> platforms, MerchantUser operator) throws ServiceException {
 
+    }
+
+    /**
+     * 获取优惠券
+     * @param voucherSearchComponent 查询组件
+     * @return
+     * @throws ServiceException
+     */
+    public VoucherResultComponent getVouchers(VoucherSearchComponent voucherSearchComponent) throws ServiceException {
+        VoucherResultComponent voucherResultComponent = new VoucherResultComponent();
+        List<VoucherEntity> voucherEntityList = voucherDefinitionService.getVouchers(voucherSearchComponent);
+        voucherResultComponent.setVouchers(VoucherConverter.convertToVoucherList(voucherEntityList));
+        voucherResultComponent.setTotalCount(voucherDefinitionService.getVouchersCount(voucherSearchComponent));
+        return voucherResultComponent;
     }
 }

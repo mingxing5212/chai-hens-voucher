@@ -1,10 +1,13 @@
 package me.mingxing5212.chaihens.voucher.api;
 
+import me.mingxing5212.chaihens.component.VoucherResultComponent;
+import me.mingxing5212.chaihens.component.VoucherSearchComponent;
 import me.mingxing5212.chaihens.domain.MerchantUser;
 import me.mingxing5212.chaihens.domain.Platform;
 import me.mingxing5212.chaihens.domain.Voucher;
 import me.mingxing5212.chaihens.exception.ServiceException;
 
+import java.util.List;
 import java.util.Set;
 
 /**
@@ -58,4 +61,12 @@ public interface IVoucherAPI {
      * @throws ServiceException
      */
     void withdrawMarket(Long voucherId, Set<Platform> platforms, MerchantUser operator) throws ServiceException;
+
+    /**
+     * 获取优惠券
+     * @param voucherSearchComponent 查询条件
+     * @return
+     * @throws ServiceException
+     */
+    VoucherResultComponent getVouchers(VoucherSearchComponent voucherSearchComponent) throws ServiceException;
 }

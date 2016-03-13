@@ -1,9 +1,12 @@
 package me.mingxing5212.chaihens.voucher.service;
 
+import me.mingxing5212.chaihens.component.VoucherSearchComponent;
 import me.mingxing5212.chaihens.voucher.data.VoucherMapper;
 import me.mingxing5212.chaihens.voucher.data.entity.VoucherEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * 优惠券相关实现类
@@ -40,5 +43,23 @@ public class VoucherDefinitionService {
      */
     public void removeVoucher(Long voucherId){
         voucherMapper.removeVoucher(voucherId);
+    }
+
+    /**
+     * 查询优惠券
+     * @param voucherSearchComponent
+     * @return
+     */
+    public List<VoucherEntity> getVouchers(VoucherSearchComponent voucherSearchComponent){
+        return voucherMapper.findVouchers(voucherSearchComponent);
+    }
+
+    /**
+     * 查询优惠券个数
+     * @param voucherSearchComponent
+     * @return
+     */
+    public Integer getVouchersCount(VoucherSearchComponent voucherSearchComponent){
+        return voucherMapper.findVouchersCount(voucherSearchComponent);
     }
 }

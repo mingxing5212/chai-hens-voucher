@@ -18,6 +18,9 @@ public class VoucherDynaUpdateSqlProvider {
             if (voucherEntity.getName() != null) {
                 SET("`name` = #{name}");
             }
+            if (voucherEntity.getCode() != null) {
+                SET("`code` = #{code}");
+            }
             if (voucherEntity.getStatus() != null) {
                 SET("`status` = #{status}");
             }
@@ -48,8 +51,8 @@ public class VoucherDynaUpdateSqlProvider {
             if (voucherEntity.getMerchantId() != null) {
                 SET("`merchant_id` = #{merchantId}");
             }
-            if (voucherEntity.getStoreJson() != null) {
-                SET("`store_json` = #{storeJson}");
+            if (voucherEntity.getStore() != null) {
+                SET("`store_id` = #{store.id}");
             }
             WHERE("id = #{id}");
         }}.toString();

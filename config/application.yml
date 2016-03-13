@@ -2,7 +2,7 @@ chaihens:
   voucher:
     web:
       #HTTP 监听端口
-      port: 8080
+      port: 8083
       #嵌入式Web服务器的线程池配置
       threadPool:
         maxThreads: 200
@@ -11,7 +11,7 @@ chaihens:
     dataSource:
       #数据库配置项参照 com.zaxxer.hikari.HikariConfig
       driverClassName: com.mysql.jdbc.Driver
-      jdbcUrl: jdbc:mysql://192.168.99.100:32768/chaihens?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8
+      jdbcUrl: jdbc:mysql://192.168.99.100:32773/chaihens?zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=utf8
       username: root
       password: 123456
 logging:

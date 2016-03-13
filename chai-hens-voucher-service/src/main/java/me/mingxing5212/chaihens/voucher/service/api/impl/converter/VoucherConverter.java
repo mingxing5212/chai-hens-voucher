@@ -4,9 +4,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import me.mingxing5212.chaihens.domain.Store;
 import me.mingxing5212.chaihens.domain.Voucher;
+import me.mingxing5212.chaihens.domain.VoucherStatus;
 import me.mingxing5212.chaihens.voucher.data.entity.VoucherEntity;
 
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 优惠券转换器
@@ -21,10 +24,11 @@ public class VoucherConverter {
      * @param voucher
      * @return
      */
-    public static VoucherEntity convertVoucherEntity(Voucher voucher){
+    public static VoucherEntity convertToVoucherEntity(Voucher voucher){
         VoucherEntity voucherEntity = new VoucherEntity();
         voucherEntity.setId(voucher.getId());
         voucherEntity.setName(voucher.getName());
+        voucherEntity.setCode(voucher.getCode());
         if(voucher.getType() != null)
             voucherEntity.setType(voucher.getType().getCode());
         if(voucher.getStatus() != null)
@@ -38,6 +42,39 @@ public class VoucherConverter {
         if(voucher.getEffectiveEndTime() != null)
             voucherEntity.setEffectiveEndTime(new Timestamp(voucher.getEffectiveEndTime()));
         return voucherEntity;
+    }
+
+    public static Voucher convertToVoucher(VoucherEntity voucherEntity){
+        Voucher voucher = new Voucher();
+        voucher.setId(voucherEntity.getId());
+        voucher.setName(voucherEntity.getName());
+        voucher.setAvatar(voucherEntity.getAvatar());
+        voucher.setColor(voucherEntity.getColor());
+        voucher.setDenomination(voucherEntity.getDenomination());
+        voucher.setDescription(voucherEntity.getDescription());
+        voucher.setEffectiveStartTime(voucherEntity.getEffectiveStartTime().getTime());
+        voucher.setEffectiveEndTime(voucherEntity.getEffectiveEndTime().getTime());
+        voucher.setCode(voucherEntity.getCode());
+        //voucher.setMerchant(voucherEntity.getMerchantId());
+        //voucher.setStatus(VoucherStatus.voucherEntity.getStatus());
+        //voucher.setType(voucherEntity.getType());
+        return voucher;
+    }
+
+    /**
+     * DTO类型转换器
+     * @param voucherEntityList
+     * @return
+     */
+    public static List<Voucher> convertToVoucherList(List<VoucherEntity> voucherEntityList){
+        if(voucherEntityList == null || voucherEntityList.isEmpty()){
+            return new ArrayList<Voucher>();
+        }
+        List<Voucher> vouchers = new ArrayList<Voucher>();
+        for (VoucherEntity voucherEntity : voucherEntityList){
+            vouchers.add(convertToVoucher(voucherEntity));
+        }
+        return vouchers;
     }
 
     /**

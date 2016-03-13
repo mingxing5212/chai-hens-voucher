@@ -14,12 +14,13 @@ public class VoucherEntity {
     private String name;
     private Integer type;
     private Integer status;
+    private String code;
     private Long merchantId;
     private BigDecimal denomination;
     private String description;
     private String avatar;
     private String color;
-    private String storeJson;
+    private StoreEntity store;
     private Timestamp effectiveStartTime;
     private Timestamp effectiveEndTime;
     private Long operator;
@@ -112,12 +113,12 @@ public class VoucherEntity {
         this.merchantId = merchantId;
     }
 
-    public String getStoreJson() {
-        return storeJson;
+    public StoreEntity getStore() {
+        return store;
     }
 
-    public void setStoreJson(String storeJson) {
-        this.storeJson = storeJson;
+    public void setStore(StoreEntity store) {
+        this.store = store;
     }
 
     public Long getOperator() {
@@ -126,5 +127,13 @@ public class VoucherEntity {
 
     public void setOperator(Long operator) {
         this.operator = operator;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }
