@@ -39,11 +39,11 @@ public class VoucherDynaUpdateSqlProvider {
             if (voucherEntity.getColor() != null) {
                 SET("`color` = #{color}");
             }
-            if (voucherEntity.getEffectiveStartTime() != null) {
-                SET("`effective_start_time` = #{effectiveStartTime}");
+            if (voucherEntity.getEffectiveDays() != null) {
+                SET("`effective_days` = #{effectiveDays}");
             }
-            if (voucherEntity.getEffectiveEndTime() != null) {
-                SET("`effective_end_time` = #{effectiveEndTime}");
+            if (voucherEntity.getMinimumConsumption() != null) {
+                SET("`minimum_consumption` = #{minimumConsumption}");
             }
             if (voucherEntity.getOperator() != null) {
                 SET("`operator` = #{operator}");
@@ -51,8 +51,8 @@ public class VoucherDynaUpdateSqlProvider {
             if (voucherEntity.getMerchantId() != null) {
                 SET("`merchant_id` = #{merchantId}");
             }
-            if (voucherEntity.getStore() != null) {
-                SET("`store_id` = #{store.id}");
+            if (voucherEntity.getStoreId() != null) {
+                SET("`store_id` = #{storeId}");
             }
             WHERE("id = #{id}");
         }}.toString();

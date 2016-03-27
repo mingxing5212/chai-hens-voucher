@@ -20,9 +20,10 @@ public class VoucherEntity {
     private String description;
     private String avatar;
     private String color;
-    private StoreEntity store;
-    private Timestamp effectiveStartTime;
-    private Timestamp effectiveEndTime;
+    private Long storeId;
+    private Integer effectiveDays;
+    private BigDecimal minimumConsumption;
+    private BigDecimal orderLimit;
     private Long operator;
 
     public Long getId() {
@@ -89,20 +90,12 @@ public class VoucherEntity {
         this.color = color;
     }
 
-    public Timestamp getEffectiveStartTime() {
-        return effectiveStartTime;
+    public Integer getEffectiveDays() {
+        return effectiveDays;
     }
 
-    public void setEffectiveStartTime(Timestamp effectiveStartTime) {
-        this.effectiveStartTime = effectiveStartTime;
-    }
-
-    public Timestamp getEffectiveEndTime() {
-        return effectiveEndTime;
-    }
-
-    public void setEffectiveEndTime(Timestamp effectiveEndTime) {
-        this.effectiveEndTime = effectiveEndTime;
+    public void setEffectiveDays(Integer effectiveDays) {
+        this.effectiveDays = effectiveDays;
     }
 
     public Long getMerchantId() {
@@ -111,14 +104,6 @@ public class VoucherEntity {
 
     public void setMerchantId(Long merchantId) {
         this.merchantId = merchantId;
-    }
-
-    public StoreEntity getStore() {
-        return store;
-    }
-
-    public void setStore(StoreEntity store) {
-        this.store = store;
     }
 
     public Long getOperator() {
@@ -135,5 +120,29 @@ public class VoucherEntity {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public BigDecimal getMinimumConsumption() {
+        return minimumConsumption;
+    }
+
+    public void setMinimumConsumption(BigDecimal minimumConsumption) {
+        this.minimumConsumption = minimumConsumption;
+    }
+
+    public BigDecimal getOrderLimit() {
+        return orderLimit;
+    }
+
+    public void setOrderLimit(BigDecimal orderLimit) {
+        this.orderLimit = orderLimit;
+    }
+
+    public Long getStoreId() {
+        return storeId;
+    }
+
+    public void setStoreId(Long storeId) {
+        this.storeId = storeId;
     }
 }

@@ -40,6 +40,7 @@ public class VoucherAPIImpl implements IVoucherAPI {
     public Long addVoucher(Voucher voucher, MerchantUser operator) throws ServiceException {
         VoucherEntity voucherEntity = VoucherConverter.convertToVoucherEntity(voucher);
         //voucherEntity.setStoreJson(VoucherConverter.convertStoreString(voucher.getStore()));
+        voucherEntity.setMerchantId(operator.getMerchant().getId());
         voucherEntity.setOperator(operator.getId());
         return voucherDefinitionService.addVoucher(voucherEntity);
     }

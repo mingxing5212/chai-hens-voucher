@@ -19,8 +19,8 @@ public interface VoucherMapper {
     @Select("SELECT * FROM tb_voucher WHERE id = #{voucherId}")
     VoucherEntity findById(@Param("voucherId") Long voucherId);
 
-    @Insert("INSERT INTO tb_voucher(`name`,`type`,`status`,`merchant_id`,`denomination`,`description`,`avatar`,`color`,`effective_start_time`,`effective_end_time`) " +
-            "VALUES (#{name}, #{type}, #{status}, #{merchantId}, #{denomination}, #{description}, #{avatar}, #{color}, #{effectiveStartTime}, #{effectiveEndTime})")
+    @Insert("INSERT INTO tb_voucher(`name`,`type`,`status`,`code`,`merchant_id`,`store_id`,`denomination`,`description`,`avatar`,`color`,`effective_days`,`minimum_consumption`,`operator`,`order_limit`) " +
+            "VALUES (#{name}, #{type}, #{status}, #{code}, #{merchantId}, #{storeId}, #{denomination}, #{description}, #{avatar}, #{color}, #{effectiveDays}, #{minimumConsumption}, #{operator}, #{orderLimit})")
     @Options(useGeneratedKeys = true, keyProperty = "id")
     Long addVoucher(VoucherEntity voucherEntity);
 
@@ -34,7 +34,6 @@ public interface VoucherMapper {
     @SelectProvider(type = VoucherDynaSelectSqlProvider.class,
             method = "selectVouchers")
     @Results({
-        @Result(id=true, column="stud_id", property="studId"),
         @Result(column="name", property="name"),
         @Result(property="store", column="store_id",
                 one=@One(select="me.mingxing5212.chaihens.voucher.data.VoucherMapper.findStoreById"))

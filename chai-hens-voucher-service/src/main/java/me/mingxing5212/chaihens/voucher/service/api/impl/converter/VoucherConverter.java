@@ -29,6 +29,7 @@ public class VoucherConverter {
         voucherEntity.setId(voucher.getId());
         voucherEntity.setName(voucher.getName());
         voucherEntity.setCode(voucher.getCode());
+        voucherEntity.setStoreId(voucher.getStore().getId());
         if(voucher.getType() != null)
             voucherEntity.setType(voucher.getType().getCode());
         if(voucher.getStatus() != null)
@@ -37,10 +38,9 @@ public class VoucherConverter {
         voucherEntity.setColor(voucher.getColor());
         voucherEntity.setAvatar(voucher.getAvatar());
         voucherEntity.setDenomination(voucher.getDenomination());
-        if(voucher.getEffectiveStartTime() != null)
-            voucherEntity.setEffectiveStartTime(new Timestamp(voucher.getEffectiveStartTime()));
-        if(voucher.getEffectiveEndTime() != null)
-            voucherEntity.setEffectiveEndTime(new Timestamp(voucher.getEffectiveEndTime()));
+        voucherEntity.setMinimumConsumption(voucher.getMinimumConsumption());
+        voucherEntity.setOrderLimit(voucher.getOrderLimit());
+        voucherEntity.setEffectiveDays(voucher.getEffectiveDays());
         return voucherEntity;
     }
 
@@ -51,9 +51,10 @@ public class VoucherConverter {
         voucher.setAvatar(voucherEntity.getAvatar());
         voucher.setColor(voucherEntity.getColor());
         voucher.setDenomination(voucherEntity.getDenomination());
+        voucher.setMinimumConsumption(voucherEntity.getMinimumConsumption());
         voucher.setDescription(voucherEntity.getDescription());
-        voucher.setEffectiveStartTime(voucherEntity.getEffectiveStartTime().getTime());
-        voucher.setEffectiveEndTime(voucherEntity.getEffectiveEndTime().getTime());
+        voucher.setEffectiveDays(voucherEntity.getEffectiveDays());
+        voucher.setOrderLimit(voucherEntity.getOrderLimit());
         voucher.setCode(voucherEntity.getCode());
         //voucher.setMerchant(voucherEntity.getMerchantId());
         //voucher.setStatus(VoucherStatus.voucherEntity.getStatus());
