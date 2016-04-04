@@ -35,11 +35,10 @@ public interface VoucherMapper {
             method = "selectVouchers")
     @Results({
         @Result(column="name", property="name"),
-        @Result(property="store", column="store_id",
-                one=@One(select="me.mingxing5212.chaihens.voucher.data.VoucherMapper.findStoreById"))
+        @Result(property="operatorName", column="operator_id",
+                one=@One(select="me.mingxing5212.chaihens.voucher.data.VoucherMapper.findOperatorById"))
     })
     List<VoucherEntity> findVouchers(VoucherSearchComponent voucherSearchComponent);
-
 
     @SelectProvider(type = VoucherDynaSelectSqlProvider.class,
             method = "selectVouchersCount")
@@ -47,4 +46,7 @@ public interface VoucherMapper {
 
     @Select("SELECT * FROM tb_store WHERE `id`=#{storeId}")
     StoreEntity findStoreById(@Param("storeId") Long storeId);
+
+    @Select("SELECT `name` FROM tb_merchant_user WHERE `id`=#{operatorId}")
+    String findOperatorById(@Param("operatorId") Long operatorId);
 }

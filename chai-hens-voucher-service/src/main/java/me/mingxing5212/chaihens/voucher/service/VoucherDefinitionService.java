@@ -5,6 +5,7 @@ import me.mingxing5212.chaihens.voucher.data.VoucherMapper;
 import me.mingxing5212.chaihens.voucher.data.entity.VoucherEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -33,6 +34,7 @@ public class VoucherDefinitionService {
      * 修改优惠券
      * @param voucherEntity
      */
+    @Transactional
     public void modifyVoucher(VoucherEntity voucherEntity){
         voucherMapper.modifyVoucher(voucherEntity);
     }

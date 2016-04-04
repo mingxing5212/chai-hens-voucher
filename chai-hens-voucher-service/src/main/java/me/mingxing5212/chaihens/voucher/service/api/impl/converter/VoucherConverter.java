@@ -29,7 +29,9 @@ public class VoucherConverter {
         voucherEntity.setId(voucher.getId());
         voucherEntity.setName(voucher.getName());
         voucherEntity.setCode(voucher.getCode());
-        voucherEntity.setStoreId(voucher.getStore().getId());
+        if(voucher.getStore() != null) {
+            voucherEntity.setStoreId(voucher.getStore().getId());
+        }
         if(voucher.getType() != null)
             voucherEntity.setType(voucher.getType().getCode());
         if(voucher.getStatus() != null)
@@ -41,6 +43,7 @@ public class VoucherConverter {
         voucherEntity.setMinimumConsumption(voucher.getMinimumConsumption());
         voucherEntity.setOrderLimit(voucher.getOrderLimit());
         voucherEntity.setEffectiveDays(voucher.getEffectiveDays());
+        voucherEntity.setOperatorName(voucher.getOperatorName());
         return voucherEntity;
     }
 
@@ -56,6 +59,7 @@ public class VoucherConverter {
         voucher.setEffectiveDays(voucherEntity.getEffectiveDays());
         voucher.setOrderLimit(voucherEntity.getOrderLimit());
         voucher.setCode(voucherEntity.getCode());
+        voucher.setOperatorName(voucherEntity.getOperatorName());
         //voucher.setMerchant(voucherEntity.getMerchantId());
         //voucher.setStatus(VoucherStatus.voucherEntity.getStatus());
         //voucher.setType(voucherEntity.getType());

@@ -21,7 +21,7 @@
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <dubbo:application name="voucher-provider" owner="mingxingli" organization="mingxing5212"/>
     <dubbo:registry address="zookeeper://192.168.99.100:32723"/>
-    <dubbo:protocol host="192.168.0.111" port="20881"/>
-	<dubbo:service interface="me.mingxing5212.chaihens.voucher.api.IVoucherAPI" ref="voucherAPI"  protocol="dubbo"/>
+    <dubbo:protocol host="192.168.1.101" port="20881"/>
+    <dubbo:service interface="me.mingxing5212.chaihens.voucher.api.IVoucherAPI" ref="voucherAPI"  protocol="dubbo"/>
     <bean id="voucherAPI" class="me.mingxing5212.chaihens.voucher.service.api.impl.VoucherAPIImpl" />
 </beans>

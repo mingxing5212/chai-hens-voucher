@@ -25,6 +25,7 @@ public class VoucherEntity {
     private BigDecimal minimumConsumption;
     private BigDecimal orderLimit;
     private Long operator;
+    private String operatorName;
 
     public Long getId() {
         return id;
@@ -144,5 +145,13 @@ public class VoucherEntity {
 
     public void setStoreId(Long storeId) {
         this.storeId = storeId;
+    }
+
+    public String getOperatorName() {
+        return operatorName;
+    }
+
+    public void setOperatorName(String operatorName) {
+        this.operatorName = operatorName;
     }
 }
